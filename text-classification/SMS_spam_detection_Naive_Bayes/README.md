@@ -31,7 +31,8 @@ This project trains a **Multinomial Naive Bayes classifier** to detect spam SMS 
 
 ## Project Structure
 
-SMS_spam_detection_Naive_Bayes/
+SMS_spam_detection_Naive_Bayes
+
 ├── smsSpamCollection/ # Dataset folder (manually added)
 │ └── SMSSpamCollection # Raw dataset file
 ├── SMS_spam_detection.ipynb # Jupyter Notebook with code

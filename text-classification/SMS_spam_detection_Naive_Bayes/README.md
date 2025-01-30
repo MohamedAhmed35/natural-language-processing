@@ -2,7 +2,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 A machine learning model to classify SMS messages as **spam** or **ham** (non-spam) using **Multinomial Naive Bayes**. Built with Python, pandas, and scikit-learn. The project is implemented in a Jupyter Notebook for transparency and reproducibility.
 

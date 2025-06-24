@@ -42,3 +42,19 @@ lazy       POS: ADJ        Tag: JJ
 dog        POS: NOUN       Tag: NN
 .          POS: PUNCT      Tag: .
 ```
+- `pos_`: Universal part of speech (e.g., NOUN, VERB)
+- `tag_`: Detailed tag based on the Penn Treeback tagset (e.g., NN, VBZ)
+
+## Installation
+To get started, install spaCy and download teh English model:
+``` bash
+pip install spacy
+python -m spacy download en_core_web_sm
+```
+
+## Application of POS Tagging
+- Text summarization
+- Named Entity Recognition (NER)
+- Grammer correction tools
+- Chatbots and voice assistants
+- Machine translation

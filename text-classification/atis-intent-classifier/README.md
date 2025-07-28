@@ -1,4 +1,4 @@
-# ✈️ Intent Classifier — BERT + Flask
+# ✈️ ATIS Intent Classifier — BERT + Flask
 
 This project is an **intent classification service** built with **DistilBERT** embeddings and a **Logistic Regression** classifier, wrapped in a simple **Flask API**.
 

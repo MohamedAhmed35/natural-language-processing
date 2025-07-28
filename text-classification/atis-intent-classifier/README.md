@@ -17,6 +17,7 @@ It uses the **ATIS dataset** as an example, a classic benchmark for flight-relat
 ---
 
 ## 📂 Project Structure
+```
 atis-intent_classifier/
 ├── app.py                # Flask server for prediction
 ├── model/
@@ -30,4 +31,4 @@ atis-intent_classifier/
 ├── static/               # (Optional static assets: CSS, JS)
 ├── requirements.txt      # Python dependencies
 └── README.md             # This file
-
+```

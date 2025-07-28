@@ -24,11 +24,10 @@ atis-intent_classifier/
 │   ├── feature_extractor.py   # BERT-based embedding generator
 │   ├── cls_train.py           # Training script for the classifier
 │   ├── intent_model.pkl       # Saved scikit-learn model
-│   ├── data/
-│   │   └── atis_intents.csv   # Training data (phrases + labels)
+├── data/
+│   └── atis_intents.csv   # Training data (phrases + labels)
 ├── templates/
 │   └── index.html        # Frontend UI
-├── static/               # (Optional static assets: CSS, JS)
 ├── requirements.txt      # Python dependencies
 └── README.md             # This file
 ```

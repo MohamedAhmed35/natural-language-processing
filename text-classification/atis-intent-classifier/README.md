@@ -34,8 +34,47 @@ atis-intent_classifier/
 
 ---
 
-## ✅ How to run
+## 📋 Prerequisites
 
-1️⃣ **Install dependencies**
+- Python 3.8+
+- PyTorch
+- Transformers (`huggingface/transformers`)
+- Flask
+- scikit-learn
+- pandas
+
+---
+
+## ⚙️ Installation
+
+1️⃣ Clone this repository  
+```bash
+git clone https://github.com/MohamedAhmed35/natural-language-processing.git
+cd natural-language-processing/text-classification/atis-intent-classifier
+```
+
+2️⃣ Create and activate a virtual environment (recommended)
+```bash
+python -m venv venv
+source venv/bin/activate  # macOS/Linux
+# .\venv\Scripts\activate  # Windows
+```
+3️⃣ Install dependencies
 ```bash
 pip install -r requirements.txt
+```
+---
+## Train the classifier
+```bash
+python model/train.py
+```
+This:
+- Generates BERT embeddings for eahc phrase
+- Trains a logistic regression model
+- Saving it to model/intent-model.pkl
+
+## Run the Web app
+Start the Flask server:
+```bash
+python app.py
+```

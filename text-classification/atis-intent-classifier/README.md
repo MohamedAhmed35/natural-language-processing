@@ -66,7 +66,7 @@ pip install -r requirements.txt
 ---
 ## Train the classifier
 ```bash
-python model/train.py
+python model/cls_train.py
 ```
 This:
 - Generates BERT embeddings for eahc phrase

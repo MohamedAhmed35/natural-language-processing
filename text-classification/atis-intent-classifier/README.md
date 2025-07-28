@@ -78,3 +78,12 @@ Start the Flask server:
 ```bash
 python app.py
 ```
+
+--- 
+## ✅ Example Phrases
+| Example Phrase                                    | Expected Intent       |
+| ------------------------------------------------- | ----------------------|
+| Show me flights from Boston to New York tomorrow. | `atis_flight`         |
+| How much is a round-trip to Miami?                | `atis_airfare`        |
+| What's the weather like in Chicago next week?.    | `atis_ground_service` |
+| What is the arrival time for flight UA202?        | `atis_flight_time`    |

@@ -32,10 +32,10 @@ labels = df['intent'].values
 # Train/Test split
 texts_train, texts_test, labels_train, labels_test = train_test_split(texts, labels, test_size=0.2, random_state=42)
 
-data_dict = {"query": texts_test,
-            "label": labels_test}
+test_data_dict = {"query": texts_test,
+                  "label": labels_test}
 
-pd.DataFrame(data_dict).to_csv("test.csv", index=False)
+pd.DataFrame(test_data_dict).to_csv("test_intents.csv", index=False)
 
 # Prepare datasets & loaders
 train_dataset = TextDataset(texts_train, labels_train)

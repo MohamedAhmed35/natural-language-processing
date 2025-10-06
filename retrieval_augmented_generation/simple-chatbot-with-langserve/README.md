@@ -60,6 +60,7 @@ The Streamlit app posts to the chain endpoint (`/chain/invoke`) to request trans
 
 ## API Usage
 POST /chain/invoke
+
 Body example:
 {
   "input": {

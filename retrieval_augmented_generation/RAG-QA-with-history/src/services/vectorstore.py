@@ -10,14 +10,13 @@ directory handling, and common helper operations used by the RAG pipeline.
 
 import os
 from typing import List, Optional
-# from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_ollama import OllamaEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from config import settings
 from utils.logger import get_logger
 
-
+os.environ["HF_TOKEN"] = settings.HF_TOKEN
 logger = get_logger(__name__)
 
 
@@ -50,14 +49,13 @@ class VectorStoreManager:
         self._init_store()
 
     def _init_store(self):
-        """Initialize the Chroma store and embeddings if not already set.
-
+        """
+        Initialize the Chroma store and embeddings if not already set.
         Currently uses OllamaEmbeddings with a fixed model identifier.
         Swap in a different embedding provider here if desired.
         """
         if self.store is None:
-            # embeddings = HuggingFaceEmbeddings(model_name = self.embedding_model)
-            embeddings = OllamaEmbeddings(model="embeddinggemma:latest")
+            embeddings = HuggingFaceEmbeddings(model_name = self.embedding_model)
             self.store = Chroma(
                 embedding_function=embeddings,
                 persist_directory=self.persist_dir

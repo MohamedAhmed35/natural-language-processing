@@ -1,0 +1,11 @@
+langchain==0.3.27
+langchain-community==0.3.29
+langchain-openai==0.3.33
+python-dotenv==1.1.1
+streamlit==1.50.0
+fastapi==0.117.1
+uvicorn==0.37.0
+sse-starlette==3.0.2
+langserve==0.3.2
+pydantic==2.10.6        # compatiable with langserve
+langchain-groq==0.3.8

@@ -21,8 +21,8 @@ The system maintains chat history, enabling it to understand conversational cont
 ## Installation
 ### 1.  Clone
 ```bash
-git clone https://github.com/your-username/RAG-QA-with-history.git
-cd RAG-QA-with-history
+git clone https://github.com/your-name/natural-language-processing.git
+cd retrieval_augmented_generation/RAG-QA-with-history
 ```
 
 ### 2. Create and activate environment
@@ -48,19 +48,20 @@ export RAG_ROOT=$(pwd)
 ```
 
 ## 📂 Project Structure
+```
 RAG-QA-with-history
-├── app.py                  # Streamlit frontend application
-├── requirement.txt         # Python dependencies
-├── .env.example            # Example environment variables
-├── README.md               # Project documentation and setup guide
+├── app.py                      # Streamlit frontend application
+├── requirement.txt             # Python dependencies
+├── .env.example                # Example environment variables
+├── README.md                   # Project documentation and setup guide
 └── src/
-    ├── main.py             # FastAPI backend entrypoint (inferred)
-    ├── config.py           # Configuration settings (API keys, model names, etc.)
+    ├── main.py                 # FastAPI backend entrypoint (inferred)
+    ├── config.py               # Configuration settings (API keys, model names, etc.)
     ├── services/
-    │   ├── rag_chain.py    # Builds the history-aware RAG chain
-    │   └── vectorstore.py  # Manages the ChromaDB vector store
+    │   ├── rag_chain.py        # Builds the history-aware RAG chain
+    |   ├── text_splitter.py    # Splits documents into manageable chunks
+    │   └── vectorstore.py      # Manages the ChromaDB vector store
     └── utils/
-        ├── logger.py       # Logging configuration
-        └── pdf_loader.py   # Helper for loading and parsing PDFs
->>>>>>> e6c09d1 (Add initial .gitignore, README, and requirements files for project setup)
-
+        ├── logger.py           # Logging configuration
+        └── pdf_loader.py       # Helper for loading and parsing PDFs
+```

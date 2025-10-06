@@ -17,9 +17,9 @@ class Settings(BaseSettings):
     # =========================== Groq Config =======================
     GROQ_API_KEY: str
     LLM_MODEL: str
-    TRIM_MAX_TOKENS: int
 
     # =========================== HuggingFace Config ================
+    HF_TOKEN: str
     EMBEDDING_MODEL: str
 
 

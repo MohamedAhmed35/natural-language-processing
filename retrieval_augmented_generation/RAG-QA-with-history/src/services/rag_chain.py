@@ -91,7 +91,7 @@ def build_chain(vectorstore_mgr: VectorStoreManager):
             "chat_history": trim_messages(
                 x.get("chat_history", []),
                 token_counter=llm,
-                max_tokens=settings.TRIM_MAX_TOKENS,
+                max_tokens=4000,
                 strategy="last"
             ),
         }

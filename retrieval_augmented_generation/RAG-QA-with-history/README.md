@@ -56,7 +56,13 @@ RAG-QA-with-history
 ├── README.md                   # Project documentation and setup guide
 └── src/
     ├── main.py                 # FastAPI backend entrypoint (inferred)
-    ├── config.py               # Configuration settings (API keys, model names, etc.)
+    ├── config/
+    |   └── config.py           # Configuration settings (API keys, model names, etc.)
+    ├── api/
+    |   ├── routes/             
+    │   |   ├── base.py         # Base router and common utilities for API routes (authentication, health checks)
+    │   |   └── rag.py          # Endpoints for document upload, indexing, query and chat interactions using the 
+    │   └── schemas.py          # Pydantic request/response models and the chat/history schema definitions
     ├── services/
     │   ├── rag_chain.py        # Builds the history-aware RAG chain
     |   ├── text_splitter.py    # Splits documents into manageable chunks

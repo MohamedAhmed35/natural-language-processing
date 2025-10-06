@@ -62,12 +62,14 @@ The Streamlit app posts to the chain endpoint (`/chain/invoke`) to request trans
 POST /chain/invoke
 
 Body example:
+```
 {
   "input": {
     "language": "French",
     "text": "Hello world"
   }
 }
+```
 
 Response includes an "output" field with the translated text.
 

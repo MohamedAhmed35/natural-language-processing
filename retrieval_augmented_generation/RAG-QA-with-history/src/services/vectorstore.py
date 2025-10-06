@@ -49,9 +49,9 @@ class VectorStoreManager:
         self._init_store()
 
     def _init_store(self):
-        """
-        Initialize the Chroma store and embeddings if not already set.
-        Currently uses OllamaEmbeddings with a fixed model identifier.
+        """Initialize the Chroma store and embeddings if not already set.
+        
+        Currently uses HuggingFaceEmbeddings with a model identifier.
         Swap in a different embedding provider here if desired.
         """
         if self.store is None:

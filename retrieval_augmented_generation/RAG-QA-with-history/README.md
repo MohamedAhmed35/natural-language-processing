@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # RAG Q&A with History
 
 

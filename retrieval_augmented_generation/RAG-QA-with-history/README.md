@@ -14,7 +14,7 @@ The system maintains chat history, enabling it to understand conversational cont
 - **Document Processing**: `PyMuPDFLoader` to load and parse text from uploaded PDFs.
 
 ## Requirements
-- python 3.10
+- python 3.10+
 - [Miniconda](https://docs.anaconda.com/free/miniconda/#quick-command-line-install) for environment management
 
 
@@ -47,6 +47,37 @@ cp .env.example .env
 export RAG_ROOT=$(pwd)
 ```
 
+
+## Running the server
+Start the FastAPI server:
+```bash
+python src/main.py
+```
+If running directly with uvicorn:
+```bash
+uvicorn src/main:app --host 0.0.0.0 --port 8000
+```
+
+### Verify installation
+```bash
+# Health check
+curl http://localhost:8000/api/rag/
+
+# View API documentation
+open http://localhost:8000/docs
+```
+
+### 📚 API Documentation
+#### Interactive Documentation
+- Swagger UI: http://localhost:8000/docs
+- ReDoc: http://localhost:8000/redoc
+
+
+## Running the Streamlit frontend
+Start teh Streamlit app:
+```bash
+streamlit run app.py
+```
 ## 📂 Project Structure
 ```
 RAG-QA-with-history

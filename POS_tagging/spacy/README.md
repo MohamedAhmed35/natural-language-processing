@@ -1,4 +1,4 @@
-# POS Tagging with SpacCy
+# POS Tagging with SpaCy
 
 ## Overview
 This project demonstrates how to perform Part-of-Speech (POS) tagging using spaCy, a powerful and fast NLP library for Python. POS tagging is the process of assigning each word in a sentence a label that indicates its grammatical role, such as noun, verb, or adjective.
